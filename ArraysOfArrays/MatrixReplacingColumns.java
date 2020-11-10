@@ -1,0 +1,59 @@
+import java.io.*;
+import static java.lang.Math.random;
+public class MatrixReplacingColumns {
+    /*
+В числовой матрице поменять местами два столбца любых столбца,
+т. е. все элементы одного столбца поставить на соответствующие им позиции другого,
+а его элементы второго переместить в первый. Номера столбцов вводит пользователь с клавиатуры.
+     */
+    public static void main(String[] args) throws Exception{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int max = 6; // параметр для ограничения количества строк и столбцов в матрице
+        int min = 3; // минимальное количество строк и столбцов в матрице
+        int n = (int) (random() * ((max - min) + 1)) + min; //количество строк [i]
+        int m = (int) (random() * ((max - min) + 1)) + min; //количество столбцов [j]
+        int[][] matrix = new int[n][m];
+        int numMax = 100; //конец диапазона чисел матрицы
+        int numMin = 0; // начало диапазона чисел матрицы
+        //заполняем матрицу случайными числами
+        System.out.println("Исходный массив для замены столбцов:");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (int) (random()*((numMax - numMin)+1)) + numMin;
+                System.out.print(" " + matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.print("Введите число от 0 до " + (m - 1) + " - номер первого столбца для замены  - ");
+        int columnOne = Integer.parseInt(reader.readLine());
+        //проверка правильности введенного числа
+        while (true){
+            if(columnOne < 0 || columnOne > m){
+                System.out.print("Введено неверное число, введите другое - ");
+                columnOne = Integer.parseInt(reader.readLine());
+            } else
+                break;}
+        System.out.print("Введите число от 0 до " + (m - 1) + " - номер второго столбца для замены  - ");
+        int columnTwo = Integer.parseInt(reader.readLine());
+        while (true){
+            if(columnTwo < 0 || columnTwo > m || columnTwo == columnOne){
+                System.out.print("Введено неверное число, введите другое - ");
+                columnTwo = Integer.parseInt(reader.readLine());
+            } else
+                break;}
+        //производим замену столбцов
+        for (int i = 0; i < matrix.length; i++) {
+                int temp = matrix[i][columnOne];
+                matrix[i][columnOne] = matrix[i][columnTwo];
+                matrix[i][columnTwo] = temp;
+        }
+        //Вывод массива с замененными столбцами
+        System.out.println("Массив после замены столбцов");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
