@@ -1,20 +1,18 @@
 import static java.lang.Math.*;
 
-import java.util.Arrays;
-
 public class Method_15 {
     /* Task 15
     Найти все натуральные n-значные числа, цифры в которых образуют строго возрастающую последовательность
     (например, 1234, 56789). Для решения задачи использовать декомпозицию.
      */
     public static void main(String[] args) {
-        int n = 4; //количество цифр в числе, n должно быть не меньше 2
+        int n = 3; //количество цифр в числе, n должно быть не меньше 2
         increasingSequence(n, numbers(n));
     }
 
-    //создаем массив из n-значного числа
+    //создаем массив из числа
     public static int[] arrayOfNumbers(int num) {
-        char[] ch = Integer.toString(abs(num)).toCharArray();
+        char[] ch = Integer.toString(num).toCharArray();
         int[] array = new int[ch.length];
         for (int i = 0; i < ch.length; i++) {
             array[i] = Character.getNumericValue(ch[i]);
