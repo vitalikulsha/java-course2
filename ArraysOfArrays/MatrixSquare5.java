@@ -7,12 +7,12 @@ public class MatrixSquare5 {
     4  0  0  0
      */
     public static void main(String[] args) {
-        int n = 6; //порядок квадратной матрицы - четное число!
-        int[][] matrix = new int[n][n];
+        int numElement = 6; //порядок квадратной матрицы - четное число!
+        int[][] matrix = new int[numElement][numElement];
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = matrix[i].length-1; j >= 0; j--) {
-                if(i <= j) {
-                    System.out.print((matrix[i][j]=(i + 1)) + " ");
+            for (int j = matrix[i].length - 1; j >= 0; j--) {
+                if (i <= j) {
+                    System.out.print((matrix[i][j] = (i + 1)) + " ");
                 } else {
                     System.out.print(matrix[i][j] + " ");
                 }

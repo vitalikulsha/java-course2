@@ -9,12 +9,12 @@ public class MatrixSumOfElements_09 {
     public static void main(String[] args) {
         int min = 0;
         int max = 100;
-        int n = 4;
-        int m = 6;
-        int[] sum = new int[m];
-        int sumMax = 0;
+        int numLine = 4;
+        int numColumn = 6;
+        int[] sum = new int[numColumn];
+        int maxSum = 0;
         int index = 0;
-        int[][] matrix = new int[n][m];
+        int[][] matrix = new int[numLine][numColumn];
         //заполняем массив случайными числами и выводим на экран
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -28,8 +28,8 @@ public class MatrixSumOfElements_09 {
             for (int j = 0; j < matrix.length; j++) {
                 sum[i] += matrix[j][i];
             }
-            if(sum[i] > sumMax){
-                sumMax = sum[i];
+            if (sum[i] > maxSum) {
+                maxSum = sum[i];
                 index = i;
             }
             System.out.println("Сумма чисел " + i + " столбца равна sum = " + sum[i]);

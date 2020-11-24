@@ -5,12 +5,12 @@ public class MatrixSearchMax_15 {
     Найдите наибольший элемент матрицы и заменить все нечетные элементы на него.
      */
     public static void main(String[] args) {
-        int n = 5;
-        int m = 6;
+        int numLine = 5;
+        int numColumn = 6;
         int min = 0;
         int max = 100;
         int numMax = Integer.MIN_VALUE;
-        int[][] matrix = new int[n][m];
+        int[][] matrix = new int[numLine][numColumn];
         System.out.println("Исходная матрица: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -22,7 +22,7 @@ public class MatrixSearchMax_15 {
         //ищем наибольший элемент матрицы
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                if(matrix[i][j] > numMax){
+                if (matrix[i][j] > numMax) {
                     numMax = matrix[i][j];
                 }
             }
@@ -32,13 +32,12 @@ public class MatrixSearchMax_15 {
         System.out.println("Матрица с замененными нечетными элементами на " + numMax + ":");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                if(matrix[i][j] % 2 == 1){
+                if (matrix[i][j] % 2 == 1) {
                     matrix[i][j] = numMax;
                 }
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
-
     }
 }

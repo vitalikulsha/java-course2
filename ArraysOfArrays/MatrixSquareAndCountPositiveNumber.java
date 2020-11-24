@@ -1,4 +1,5 @@
 import static java.lang.Math.*;
+
 public class MatrixSquareAndCountPositiveNumber {
     /* Задача 7
     Сформировать квадратную матрицу порядка N по правилу:
@@ -6,15 +7,15 @@ public class MatrixSquareAndCountPositiveNumber {
     и подсчитать количество положительных элементов в ней.
      */
     public static void main(String[] args) {
-        int n = 6;
+        int numElements = 6;
         int count = 0;//счетчик положительных элементов матрицы
-        double [][] matrix = new double [n][n]; //используем тип double, т.к. sin всегда меньше 1
+        double[][] matrix = new double[numElements][numElements]; //используем тип double, т.к. sin всегда меньше 1
         System.out.println("Вывод матрицы согласно условию:");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.printf("%.3f",(matrix[i][j] = sin((pow(i, 2) - pow(j, 2)) / n)));
+                System.out.printf("%.3f", (matrix[i][j] = sin((pow(i, 2) - pow(j, 2)) / numElements)));
                 System.out.print("  ");
-                if(matrix[i][j] > 0){
+                if (matrix[i][j] > 0) {
                     count++;
                 }
             }

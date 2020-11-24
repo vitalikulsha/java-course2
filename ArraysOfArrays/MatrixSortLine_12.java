@@ -5,11 +5,11 @@ public class MatrixSortLine_12 {
     Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
      */
     public static void main(String[] args) {
-        int n = 4;
-        int m = 6;
+        int numLine = 4;
+        int numColumn = 6;
         int min = 0;
         int max = 100;
-        int[][] matrix = new int[n][m];
+        int[][] matrix = new int[numLine][numColumn];
         System.out.println("Исходная матрица: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -42,8 +42,8 @@ public class MatrixSortLine_12 {
             for (int j = 0; j < matrix[i].length; j++) {
                 for (int k = 0; k < matrix[i].length - 1; k++) {
                     if (matrix[i][k] < matrix[i][k + 1]) {
-                        int temp = matrix[i][k+1];
-                        matrix[i][k+1] = matrix[i][k];
+                        int temp = matrix[i][k + 1];
+                        matrix[i][k + 1] = matrix[i][k];
                         matrix[i][k] = temp;
                     }
                 }

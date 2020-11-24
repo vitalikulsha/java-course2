@@ -9,8 +9,8 @@ public class MatrixSquare6 {
     1 1 1 1 1 1
      */
     public static void main(String[] args) {
-        int n = 6; //порядок квадратной матрицы - четное число!
-        int[][] matrix = new int[n][n];
+        int numElements = 6; //порядок квадратной матрицы - четное число!
+        int[][] matrix = new int[numElements][numElements];
         //вывод первой половины матрицы
         for (int i = 0; i < matrix.length/2; i++) {
             for (int j = 0; j < matrix[i].length; j++) {

@@ -1,5 +1,3 @@
-import java.util.Random;
-
 import static java.lang.Math.random;
 
 public class MatrixZeroAndOne_14 {
@@ -8,12 +6,11 @@ public class MatrixZeroAndOne_14 {
     состоящую из нулей и единиц, причем в каждом столбце число единиц равно номеру столбца.
      */
     public static void main(String[] args) {
-        int m = 5;
-        int n = 6;
-        Random random = new Random();
-        // количество строк должно быть больше или равно, чем количество стобцов минус 1
-        int[][] matrix = m >= n - 1 ? new int[m][n] : new int[n][m];
-        int[] count = m >= n - 1 ? new int[n] : new int[m]; //счетчик столбцов
+        int numLine = 5;
+        int numColumn = 6;
+        // количество строк должно быть больше или равно, чем количество стобцов, минус 1
+        int[][] matrix = numLine >= numColumn - 1 ? new int[numLine][numColumn] : new int[numColumn][numLine];
+        int[] count = numLine >= numColumn - 1 ? new int[numColumn] : new int[numLine]; //счетчик столбцов
         int countOne = 0; //счетчик единиц
         for (int i = 0; i < count.length; i++) {
             count[i] = i;

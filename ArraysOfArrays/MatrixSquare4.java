@@ -5,12 +5,12 @@ public class MatrixSquare4 {
      n n-1 n-2 ... 1
      */
     public static void main(String[] args) {
-        int n = 6; //порядок квадратной матрицы - четное число!
-        int[][] matrix = new int[n][n];
+        int numElement = 6; //порядок квадратной матрицы - четное число!
+        int[][] matrix = new int[numElement][numElement];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if(i % 2 !=0 ){
-                    System.out.print((matrix[i][j] = (n - j)) + " ");//вывод четной строки
+                    System.out.print((matrix[i][j] = (numElement - j)) + " ");//вывод четной строки
                 } else {
                     System.out.print((matrix[i][j] = (j + 1)) + " ");//вывод нечетной строки
                 }

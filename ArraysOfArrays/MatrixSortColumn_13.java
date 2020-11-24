@@ -5,11 +5,11 @@ public class MatrixSortColumn_13 {
     Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
      */
     public static void main(String[] args) {
-        int n = 5;
-        int m = 6;
+        int numLine = 5;
+        int numColumn = 6;
         int min = 0;
         int max = 9;
-        int[][] matrix = new int[n][m];
+        int[][] matrix = new int[numLine][numColumn];
         System.out.println("Исходная матрица: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
