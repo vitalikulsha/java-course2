@@ -1,26 +1,32 @@
+import static java.lang.Math.random;
+
 public class MatrixOddColumn {
     /* Задача 1
     Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
      */
     public static void main(String[] args) {
-        int[][] matrix = new int [6][];
-        //рваная матрица
-        matrix[0] = new int[] {2, 3, 5};
-        matrix[1] = new int[] {10, 6, 8, 9};
-        matrix[2] = new int[] {9, 8, 9, 10, 1};
-        matrix[3] = new int[] {1, 0, 68, 98};
-        matrix[4] = new int[] {100, 9, 0};
-        matrix[5] = new int[] {5, 2};
+        int max = 100; //конец диапазона чисел матрицы
+        int min = 0; // начало диапазона чисел матрицы
+        int numElementLine = 6; // количество элементов в строке
+        int numElementColumn = 8; // количество элементов в толбце
+        int[][] matrix = new int[numElementLine][numElementColumn];
+        System.out.println("Исходная матрица: ");
+        for (int i = 0; i < matrix.length; i++) { //заполняем матрицу случайными числами
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (int) (random() * ((max - min) + 1)) + min;
+                System.out.print(" " + matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
         //начинаем с первого нечетного столбца и потом переходим к следующему (+2)
-        for (int i = 1; i < matrix.length; i = i+2) {
-            if(matrix[i][0] > matrix[i][matrix[i].length-1]){   //сравниваем первый элемент с последний
-                System.out.print("Столбец матрицы matrix[" + i + "]: ");
-                for (int j = 0; j < matrix[i].length; j++) {
+        System.out.println("Нечетные столбцы, у которых первый элемент больше последнего:");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 1; j < matrix[i].length; j = j + 2) {
+                if (matrix[0][j] > matrix[matrix.length - 1][j]) {
                     System.out.print(matrix[i][j] + " ");
                 }
-                System.out.println();
-
             }
+            System.out.println();
         }
     }
 }
