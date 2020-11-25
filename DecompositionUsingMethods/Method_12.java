@@ -14,10 +14,10 @@ public class Method_12 {
 
     //создаем массив из числа
     public static int[] arrayOfNumbers(int num) {
-        char[] ch = Integer.toString(num).toCharArray();
-        int[] array = new int[ch.length];
-        for (int i = 0; i < ch.length; i++) {
-            array[i] = Character.getNumericValue(ch[i]);
+        char[] charArr = Integer.toString(num).toCharArray();
+        int[] array = new int[charArr.length];
+        for (int i = 0; i < charArr.length; i++) {
+            array[i] = Character.getNumericValue(charArr[i]);
         }
         return array;
     }

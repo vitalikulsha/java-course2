@@ -8,10 +8,10 @@ public class Method_05 {
  (вывести на печать число, которое меньше максимального элемента массива, но больше всех других элементов).
      */
     public static void main(String[] args) {
-        int n = 20;
+        int numElements = 20;
         int min = 0;
         int max = 100;
-        int[] array = new int[n];
+        int[] array = new int[numElements];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (random() * ((max - min) + 1) + min);
         }
@@ -34,5 +34,4 @@ public class Method_05 {
         }
         return secondMax;
     }
-
 }

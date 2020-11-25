@@ -7,10 +7,10 @@ public class Method_04 {
     Указание. Координаты точек занести в массив
      */
     public static void main(String[] args) {
-        int n = 5; //количество точек
+        int numberPoints = 5; //количество точек
         int min = -100;
         int max = 100;
-        int[][] matrix = new int[n][2]; // первый столбец - координата Х, второй столбец - координата Y
+        int[][] matrix = new int[numberPoints][2]; // первый столбец - координата Х, второй столбец - координата Y
         System.out.println("Матрица координат точек: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -41,7 +41,6 @@ public class Method_04 {
                 }
             }
         }
-        int[] point = {idFirstPoint, idSecondPoint};
-        return point;
+        return new int[]{idFirstPoint, idSecondPoint};
     }
 }

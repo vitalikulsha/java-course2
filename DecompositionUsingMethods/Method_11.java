@@ -11,11 +11,11 @@ public class Method_11 {
     }
 
     public static void numberOfDigits(int num1, int num2) {
-        char[] ch1 = Integer.toString(abs(num1)).toCharArray();
-        char[] ch2 = Integer.toString(abs(num2)).toCharArray();
-        if (ch1.length > ch2.length) {
+        char[] charArr1 = Integer.toString(abs(num1)).toCharArray();
+        char[] charArr2 = Integer.toString(abs(num2)).toCharArray();
+        if (charArr1.length > charArr2.length) {
             System.out.println("Количество цифр в числе " + num1 + " больше, чем в числе " + num2);
-        } else if (ch1.length == ch2.length) {
+        } else if (charArr1.length == charArr2.length) {
             System.out.println("Количество цифр в числе " + num1 + " равно количеству цифр в числе " + num2);
         } else {
             System.out.println("Количество цифр в числе " + num2 + " больше, чем в числе " + num1);

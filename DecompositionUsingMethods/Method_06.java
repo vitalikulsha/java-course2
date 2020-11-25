@@ -5,18 +5,18 @@ public class Method_06 {
 Написать метод(методы), проверяющий, являются ли данные три числа взаимно простыми.
      */
     public static void main(String[] args) {
-        int A = randomNumber();
-        int B = randomNumber();
-        int C = randomNumber();
-        mutuallyPrimeNumbers(A, B, C);
+        int numA = randomNumber();
+        int numB = randomNumber();
+        int numC = randomNumber();
+        mutuallyPrimeNumbers(numA, numB, numC);
     }
 
-    public static void mutuallyPrimeNumbers(int A, int B, int C) {
-        int min = min(min(abs(A), abs(B)), abs(C));
-        System.out.print("Числа " + A + ", " + B + " и " + C);
+    public static void mutuallyPrimeNumbers(int numA, int numB, int numC) {
+        int min = min(min(abs(numA), abs(numB)), abs(numC));
+        System.out.print("Числа " + numA + ", " + numB + " и " + numC);
         int count = 0;
         for (int i = min; i > 1; i--) { //перебираем числа от минимального из двух и до 1
-            if (A % i == 0 && B % i == 0 && C % i == 0) {
+            if (numA % i == 0 && numB % i == 0 && numC % i == 0) {
                 System.out.println(" не являются взаимно простыми, наибольший общий делитель равен " + i);
                 break;
             } else {
@@ -26,22 +26,18 @@ public class Method_06 {
                 System.out.println(" числа являются взаимно простыми");
             }
         }
-        if (abs(A) == 1 || abs(B) == 1 || abs(C) == 1) {
-            if (A == 0 || B == 0 || C == 0) {
+        if (abs(numA) == 1 || abs(numB) == 1 || abs(numC) == 1) {
+            if (numA == 0 || numB == 0 || numC == 0) {
                 System.out.println(" являются не взаимно простыми, т.к. одно из чисел равно 0");
             } else {
                 System.out.println(" являются взаимно простыми, т.к. одно из чисел равно 1 или -1");
             }
         }
-
     }
 
     public static int randomNumber() {
         int min = -100;
         int max = 100;
-        int num = (int) (random() * ((max - min) + 1) + min);
-        return num;
+        return (int) (random() * ((max - min) + 1) + min);
     }
-
-
 }

@@ -8,9 +8,9 @@ public class Method_14 {
      Например: 1*1*1 + 5*5*5 + 3*3*3 = 153
      */
     public static void main(String[] args) {
-        int k = 10000;
-        System.out.print("Список чисел Армстронга от 1 до " + k + ": ");
-        for (int i = 1; i < k; i++) {
+        int numK = 10000;
+        System.out.print("Список чисел Армстронга от 1 до " + numK + ": ");
+        for (int i = 1; i < numK; i++) {
             if (sumOfOddNumbers(arrayOfNumbers(i)) == i) {
                 System.out.print(i + ", ");
             }
@@ -19,10 +19,10 @@ public class Method_14 {
 
     //создаем массив из числа
     public static int[] arrayOfNumbers(int num) {
-        char[] ch = Integer.toString(num).toCharArray();
-        int[] array = new int[ch.length];
-        for (int i = 0; i < ch.length; i++) {
-            array[i] = Character.getNumericValue(ch[i]);
+        char[] charArr = Integer.toString(num).toCharArray();
+        int[] array = new int[charArr.length];
+        for (int i = 0; i < charArr.length; i++) {
+            array[i] = Character.getNumericValue(charArr[i]);
         }
         return array;
     }

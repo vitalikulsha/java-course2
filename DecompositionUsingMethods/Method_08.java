@@ -33,8 +33,7 @@ public class Method_08 {
 
     //находим сумму трех последовательно расположенных элементов
     public static int sumOfThreeElements(int numK, int[] array) {
-        int sum = array[numK] + array[numK + 1] + array[numK + 2];
-        return sum;
+        return array[numK] + array[numK + 1] + array[numK + 2];
     }
 
     // создаем массив сумм трех последовательно расположенных элементов

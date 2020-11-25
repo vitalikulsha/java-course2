@@ -5,13 +5,12 @@ public class Method_03 {
 Вычислить площадь правильного шестиугольника со стороной а, используя метод вычисления площади треугольника.
      */
     public static void main(String[] args) {
-        int a = 5;
+        int side = 5;
         System.out.print("Площадь правильного шестиугольника равна - ");
-        System.out.printf("%.3f", 6 * areaOfTheTriangle(a));
+        System.out.printf("%.3f", 6 * areaOfTheTriangle(side));
     }
 
-    public static double areaOfTheTriangle(int a) {
-        double area = a * sqrt(3) / 4;
-        return area;
+    public static double areaOfTheTriangle(int side) {
+        return side * sqrt(3) / 4;
     }
 }
