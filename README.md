@@ -112,9 +112,7 @@
 
 7. [Method_07](https://github.com/vitalikulsha/java-course2/blob/master/DecompositionUsingMethods/Method_07.java) - Написать метод(методы) для вычисления суммы факториалов всех нечетных чисел от 1 до 9.
 
-8. [Method_08](https://github.com/vitalikulsha/java-course2/blob/master/DecompositionUsingMethods/Method_08.java) - Задан массив D. Определить следующие суммы: D[l] + D[2] + D[3]; D[3] + D[4] + D[5]; D[4] +D[5] +D[6].
-
-Пояснение. Составить метод(методы) для вычисления суммы трех последовательно расположенных элементов массива с номерами от k до m.
+8. [Method_08](https://github.com/vitalikulsha/java-course2/blob/master/DecompositionUsingMethods/Method_08.java) - Задан массив D. Определить следующие суммы: D[l] + D[2] + D[3]; D[3] + D[4] + D[5]; D[4] +D[5] +D[6]. _Пояснение_. Составить метод(методы) для вычисления суммы трех последовательно расположенных элементов массива с номерами от k до m.
 
 9. [Method_09](https://github.com/vitalikulsha/java-course2/blob/master/DecompositionUsingMethods/Method_09.java) - Даны числа X, Y, Z, Т — длины сторон четырехугольника. Написать метод(методы) вычисления его площади, если угол между сторонами длиной X и Y— прямой.
 
