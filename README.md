@@ -10,47 +10,27 @@
 ## 5. [Questions](#Questions)
 
 # [One-dimensional arrays](https://github.com/vitalikulsha/java-course2/tree/master/OneDimensionalArrays)
-1. [ArrayMultiple](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMultiple_01.java)
+1. [ArrayMultiple](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMultiple_01.java) - В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
 
-В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
+2. [ArrayReplacement](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplacement_02.java) - Дана последовательность действительных чисел а1 ,а2 ,..., ап. Заменить все ее члены, большие данного Z, этим числом. Подсчитать количество замен.
 
-2. [ArrayReplacement](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplacement_02.java)
+3. [ArrayCouting](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayCounting_03.java) - Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.
 
-Дана последовательность действительных чисел а1 ,а2 ,..., ап. Заменить все ее члены, большие данного Z, этим числом. Подсчитать количество замен.
+4. [ArrayReplaceMinWithMax](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplaceMinWithMax_04.java) - Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
 
-3. [ArrayCouting](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayCounting_03.java)
+5. [ArrayPrintGreater](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayPrintGreater_05.java) - Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i.
 
-Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.
+6. [ArraySumIndexSimpleNumber](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArraySumIndexSimpleNumber_06.java) - Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых являются простыми числами.
 
-4. [ArrayReplaceMinWithMax](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplaceMinWithMax_04.java)
-
-Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
-
-5. [ArrayPrintGreater](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayPrintGreater_05.java)
-
-Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i.
-
-6. [ArraySumIndexSimpleNumber](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArraySumIndexSimpleNumber_06.java)
-
-Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых являются простыми числами.
-
-7. [ArrayMax](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMax_07.java)
-
-Даны действительные числа а1 ,а2 ,..., аn. Найти
+7. [ArrayMax](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMax_07.java) - Даны действительные числа а1 ,а2 ,..., аn. Найти
 
 ![Alt-текст](https://github.com/vitalikulsha/java-course2/blob/master/img/algorithmization_3-7.png)
 
-8. [ArrayMin](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMin_08.java)
+8. [ArrayMin](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayMin_08.java) - Дана последовательность целых чисел а1 ,а2 ,..., аn. Образовать новую последовательность, выбросив из исходной те члены, которые равны min(а1 ,а2 ,..., аn).
 
-Дана последовательность целых чисел а1 ,а2 ,..., аn. Образовать новую последовательность, выбросив из исходной те члены, которые равны min(а1 ,а2 ,..., аn).
+9. [ArrayEqualNumber](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayEqualNumber_09.java) - В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. Если таких чисел несколько, то определить наименьшее из них.
 
-9. [ArrayEqualNumber](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayEqualNumber_09.java)
-
-В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. Если таких чисел несколько, то определить наименьшее из них.
-
-10. [ArrayReplaceWithZero](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplaceWithZero_10.java)
-
-Дан целочисленный массив с количеством элементов п. Сжать массив, выбросив из него каждый второй элемент (освободившиеся элементы заполнить нулями).
+10. [ArrayReplaceWithZero](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayReplaceWithZero_10.java) - Дан целочисленный массив с количеством элементов п. Сжать массив, выбросив из него каждый второй элемент (освободившиеся элементы заполнить нулями).
 
 [:arrow_up: Оглавление](#ОГЛАВЛЕНИЕ)
 
