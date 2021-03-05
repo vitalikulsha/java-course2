@@ -36,7 +36,7 @@
 
 # [Arrays of arrays](https://github.com/vitalikulsha/java-course2/tree/master/ArraysOfArrays)
 
-1.[MatrixOddColumn](https://github.com/vitalikulsha/java-course2/blob/master/ArraysOfArrays/MatrixOddColumn.java) -  Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
+1. [MatrixOddColumn](https://github.com/vitalikulsha/java-course2/blob/master/ArraysOfArrays/MatrixOddColumn.java) -  Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
 
 2. [MatrixIsSquare](https://github.com/vitalikulsha/java-course2/blob/master/ArraysOfArrays/MatrixIsSquare.java) - Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.
 
@@ -82,15 +82,15 @@
 
 # [Sorting](https://github.com/vitalikulsha/java-course2/tree/master/Sorting)
 
-1. Заданы два одномерных массива с различным количеством элементов и натуральное число k. Объединить их в один массив, включив второй массив между k-м и (k+1) - м элементами первого, при этом не используя дополнительный массив.
+1. [TwoArrays](https://github.com/vitalikulsha/java-course2/blob/master/Sorting/TwoArrays_1.java) - Заданы два одномерных массива с различным количеством элементов и натуральное число k. Объединить их в один массив, включив второй массив между k-м и (k+1) - м элементами первого, при этом не используя дополнительный массив.
 
-2. Реализуйте сортировку выбором.
+2. [SortingByChoice](https://github.com/vitalikulsha/java-course2/blob/master/Sorting/SortingByChoice_2.java) - Реализуйте сортировку выбором.
 
-3. Реализуйте сортировку обменами.
+3. [BubbleSort](https://github.com/vitalikulsha/java-course2/blob/master/Sorting/BubbleSort_3.java) - Реализуйте сортировку обменами.
 
-4. Реализуйте сортировку вставками.
+4. [InsertionSort](https://github.com/vitalikulsha/java-course2/blob/master/Sorting/InsertionSort_4.java) - Реализуйте сортировку вставками.
 
-5. Реализуйте сортировку Шелла.
+5. [ShellSort](https://github.com/vitalikulsha/java-course2/blob/master/Sorting/ShellSort_5.java) - Реализуйте сортировку Шелла.
 
 [:arrow_up: Оглавление](#ОГЛАВЛЕНИЕ)
 
