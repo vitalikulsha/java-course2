@@ -9,7 +9,7 @@
 ## 4. [Decomposition using methods](#Decomposition-using-methods)
 ## 5. [Questions](#Questions)
 
-# One-dimensional arrays
+# [One-dimensional arrays](https://github.com/vitalikulsha/java-course2/tree/master/OneDimensionalArrays)
 1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
 
 2. Дана последовательность действительных чисел а1 ,а2 ,..., ап. Заменить все ее члены, большие данного Z, этим числом. Подсчи­тать количество замен.
@@ -34,7 +34,7 @@
 
 [:arrow_up: Оглавление](#ОГЛАВЛЕНИЕ)
 
-# Arrays of arrays
+# [Arrays of arrays](https://github.com/vitalikulsha/java-course2/tree/master/ArraysOfArrays)
 
 1. Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
 
@@ -80,7 +80,7 @@
 
 [:arrow_up: Оглавление](#ОГЛАВЛЕНИЕ)
 
-# Sorting
+# [Sorting](https://github.com/vitalikulsha/java-course2/tree/master/Sorting)
 
 1. Заданы два одномерных массива с различным количеством элементов и натуральное число k. Объединить их в один массив, включив второй массив между k-м и (k+1) - м элементами первого, при этом не используя дополнительный массив.
 
@@ -94,7 +94,7 @@
 
 [:arrow_up: Оглавление](#ОГЛАВЛЕНИЕ)
 
-# Decomposition using methods
+# [Decomposition using methods](https://github.com/vitalikulsha/java-course2/tree/master/DecompositionUsingMethods)
 
 1. Написать метод(методы) для нахождения наибольшего общего делителя и наименьшего общего кратного двух натуральных чисел:
 
