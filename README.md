@@ -1,13 +1,13 @@
+# Algorithmization
+### Description
+### Решите задачи. Каждое решение можно оформить отдельным проектом.
+
 # ОГЛАВЛЕНИЕ
 ## 1. [One-dimensional arrays](#One-dimensional-arrays)
 ## 2. [Arrays of arrays](#Arrays-of-arrays)
 ## 3. [Sorting](#Sorting)
 ## 4. [Decomposition using methods](#Decomposition-using-methods)
 ## 5. [Questions](#Questions)
-
-# Algorithmization
-### Description
-### Решите задачи. Каждое решение можно оформить отдельным проектом.
 
 # One-dimensional arrays
 1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
