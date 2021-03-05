@@ -26,7 +26,9 @@
 
 Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
 
-5. [ArrayPrintGreater](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayPrintGreater_05.java) - Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i.
+5. [ArrayPrintGreater](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArrayPrintGreater_05.java)
+
+Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i.
 
 6. [ArraySumIndexSimpleNumber](https://github.com/vitalikulsha/java-course2/blob/master/OneDimensionalArrays/ArraySumIndexSimpleNumber_06.java)
 
